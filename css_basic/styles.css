@@ -1,0 +1,61 @@
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Main container */
+  main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* Flex grows and shrinks */
+  }
+  
+  /* Article (Main content) */
+  article {
+    flex: 2; /* 2/3 of the space */
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow-y: auto; /* Scrollable content */
+  }
+  
+  /* Aside (Sidebar) */
+  aside {
+    flex: 1; /* 1/3 of the space */
+    padding: 20px;
+    background-color: #ddd;
+    overflow-y: auto; /* Scrollable content */
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+/* Responsive Layout for Mobile */
+@media (max-width: 800px) {
+    body.works_on_smartphone {
+      display: block; /* Stack all elements vertically */
+    }
+  
+    main {
+      display: block; /* Stack article and aside vertically */
+    }
+  
+    article, aside {
+      width: 100%; /* Take full width when stacked */
+    }
+  }
